@@ -1,4 +1,3 @@
-// import Job from "../models/Job.js";
 const Job = require("../models/Job.js");
 
 const processJob = async (jobId) => {
@@ -22,4 +21,3 @@ const processJob = async (jobId) => {
 };
 
 module.exports = processJob;
-// export default processJob;
