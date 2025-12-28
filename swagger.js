@@ -1,4 +1,3 @@
-// import swaggerUi from "swagger-ui-express";
 const swaggerUi = require("swagger-ui-express");
 
 const swaggerDoc = {
@@ -14,4 +13,3 @@ const setupSwagger = (app) => {
 };
 
 module.exports = setupSwagger
-// export default setupSwagger;
