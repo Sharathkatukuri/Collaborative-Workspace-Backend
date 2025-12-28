@@ -3,4 +3,4 @@ const emitEvent = (event, payload) => {
 };
 
 module.exports = emitEvent
-// export default emitEvent;
+
