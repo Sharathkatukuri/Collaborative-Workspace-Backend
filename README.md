@@ -51,32 +51,32 @@ Vercel Serverless Functions
 - Upstash Redis account
 - Git
 
-# Install Dependencies
+### Install Dependencies
 - npm install
 
-# Run the Application Locally
+### Run the Application Locally
 - node server.js
 
-# Expected output:
+### Expected output:
 -MongoDB connected
 -Redis connected
 -Server running on port 3000
 
 ---
 ## 3. Design Decisions and Trade-offs
-# 1. Serverless Deployment on Vercel
+### 1. Serverless Deployment on Vercel
 
 Decision: Use Vercel serverless functions instead of a traditional server.
 Reason: Simplifies deployment and provides automatic scaling.
 Trade-off: Long-running processes are not supported, so background jobs are simulated.
 
-# 2. Redis for Asynchronous Jobs
+### 2. Redis for Asynchronous Jobs
 
 Decision: Use Redis lists to simulate job queues.
 Reason: Lightweight, fast, and commonly used for background task handling.
 Trade-off: Not as feature-rich as Kafka or RabbitMQ, but sufficient for this scope.
 
-# 3. Mocked Real-Time Collaboration
+### 3. Mocked Real-Time Collaboration
 
 Decision: Log collaboration events instead of maintaining persistent WebSocket connections.
 Reason: Vercel does not support long-lived WebSocket connections easily.
@@ -84,19 +84,19 @@ Trade-off: Real-time behavior is simulated rather than fully live.
 
 ## 4. Scalability Considerations
 
-# Horizontal Scalability
+### Horizontal Scalability
 Vercel serverless functions scale automatically based on incoming traffic.
 
-# Stateless Backend
+### Stateless Backend
 The application is stateless; all state is stored in MongoDB and Redis.
 
-# Caching Layer
+### Caching Layer
 Redis can be extended to cache frequently accessed data to reduce database load.
 
-# Asynchronous Processing
+### Asynchronous Processing
 Background jobs are decoupled from API requests to improve responsiveness.
 
-#Future Enhancements
+### Future Enhancements
 
 External WebSocket service for real-time collaboration
 
