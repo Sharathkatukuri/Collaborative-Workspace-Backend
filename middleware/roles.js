@@ -8,4 +8,3 @@ const roles = (...allowedRoles) => {
 };
 
 module.exports = roles;
-// export default roles;
