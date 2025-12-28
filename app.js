@@ -1,10 +1,3 @@
-// import express from "express";
-// import cors from "cors";
-// import authRoutes from "./routes/auth.routes.js";
-// import projectRoutes from "./routes/project.routes.js";
-// import jobRoutes from "./routes/job.routes.js";
-// import setupSwagger from "./swagger.js";
-
 const express = require("express");
 const cors = require("cors");
 const authRoutes= require("./routes/auth.routes.js");
@@ -37,5 +30,4 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: "Something went wrong" });
 });
 
-// export default app;
 module.exports = app;
