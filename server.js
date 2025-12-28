@@ -1,12 +1,9 @@
-// import dotenv from "dotenv";
-// dotenv.config();
 if (process.env.NODE_ENV != "production") {
   require("dotenv").config({ quiet: true });
 }
 
 const app = require("./app.js");
 const connectDB = require("./config/db.js");
-// import connectDB from "./config/db.js";
 
 connectDB();
 
