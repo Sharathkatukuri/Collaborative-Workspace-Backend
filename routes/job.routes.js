@@ -1,7 +1,3 @@
-// import express from "express";
-// import Job from "../models/Job.js";
-// import redis from "../config/redis.js";
-
 const express = require("express");
 const Job = require("../models/Job.js");
 const redis = require("../config/redis.js");
@@ -22,4 +18,3 @@ router.get("/:id", async (req, res) => {
 });
 
 module.exports = router;
-// export default router;
