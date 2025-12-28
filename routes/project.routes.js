@@ -1,13 +1,7 @@
-// import express from "express";
-// import Project from "../models/Project.js";
-// import auth from "../middleware/auth.js";
-// import roles from "../middleware/roles.js";
-
 const express = require("express");
 const Project = require("../models/Project.js");
 const auth = require("../middleware/auth.js");
 const roles = require("../middleware/roles.js");
-
 
 const router = express.Router();
 
